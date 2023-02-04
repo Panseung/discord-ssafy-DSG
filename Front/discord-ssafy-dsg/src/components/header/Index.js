@@ -9,9 +9,15 @@ function Header() {
     <div className={ `${ style['header'] }` }>
       <img className={ `${ style['header-left'] }` } src={ topLeftImg } alt='logo' />
       <div className={ `${ style['header-right'] }` }>
-        <HorizontalRuleIcon className={ `${ style['icon'] }` }></HorizontalRuleIcon>
-        <CheckBoxOutlineBlankIcon className={ `${ style['icon'] }` }></CheckBoxOutlineBlankIcon>
-        <CloseIcon className={ `${ style['icon'] }` }></CloseIcon>
+        <div className={ `${ style['icon-box'] }` }>
+          <HorizontalRuleIcon className={ `${ style['icon'] }` }></HorizontalRuleIcon>
+        </div>
+        <div className={ `${ style['icon-box'] }` }>
+          <CheckBoxOutlineBlankIcon className={ `${ style['icon'] }` }></CheckBoxOutlineBlankIcon>
+        </div>
+        <div className={ `${ style['icon-box'] } ${ style['close'] }` }>
+          <CloseIcon className={ `${ style['icon'] }` }></CloseIcon>
+        </div>
       </div>
     </div>
   )

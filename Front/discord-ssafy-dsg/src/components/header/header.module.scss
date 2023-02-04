@@ -13,13 +13,28 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
-
-    padding: 3px;
     color: #fff;
 
-    .icon {
-      font-size: 15px;
+    .icon-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 30px;
+      height: 100%;
+      
+      &:hover {
+        cursor: pointer;
+        background-color: #36393F;
+      }
+
+      &.close:hover {
+        background-color: red;
+      }
+
+      .icon {
+        font-size: 15px;
+      }
     }
+
   }
 }
