@@ -1,0 +1,34 @@
+.home {
+  display: grid;
+  grid-template-rows: 50px minmax(0, 1fr);
+  grid-template-columns: 240px minmax(0,1fr) 240px;
+  grid-template-areas: 'left-header main-header main-header'
+                       'left-area main-area right-area' ;
+
+  .left-header {
+    grid-area: left-header;
+    border-bottom: 1px solid #232527;
+    background-color: #2F3136;
+  }
+
+  .main-header {
+    grid-area: main-header;
+    border-bottom: 1px solid #232527;
+    background-color: #36393F;
+  }
+
+  .left-area {
+    grid-area: left-area;
+    background-color: #2F3136;
+  }
+
+  .main-area {
+    grid-area: main-area;
+    background-color: #36393F;
+  }
+
+  .right-area {
+    grid-area: right-area;
+    background-color: #2F3136;
+  }
+}

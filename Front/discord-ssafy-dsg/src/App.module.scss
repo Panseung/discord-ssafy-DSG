@@ -1,0 +1,21 @@
+.App {
+  display: grid;
+  grid-template-rows: 25px minmax(0, 1fr);
+  grid-template-columns: 70px minmax(0, 1fr);
+  grid-template-areas: 'header header'
+                       'left-side-bar router-area';
+  height: 100vh;
+
+  .header {
+    grid-area: header;
+  }
+  
+  .left-side-bar {
+    grid-area: left-side-bar;
+  }
+
+  .router-area {
+    grid-area: router-area;
+  }
+}
+
