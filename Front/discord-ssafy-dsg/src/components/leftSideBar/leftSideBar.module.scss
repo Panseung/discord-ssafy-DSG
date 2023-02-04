@@ -1,11 +1,25 @@
 .left-side-bar {
   display: grid;
   grid-template-rows: 60px minmax(0, 1fr);
+  gap: 10px;
 
   height: 100%;
   background-color: #202225;
   
   .first-area {
+    display: grid;
+    grid-template-rows: minmax(0, 1fr) 2px;
 
+    .under-line {
+      margin-left: 22px;
+      width: 30px;
+      height: 2px;
+      background-color: #36393F;
+    }
+  }
+  .group-area {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
 }

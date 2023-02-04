@@ -9,7 +9,7 @@ function GroupServerButton( props ) {
       </div>
       <div className={ `${style['img-area']}` }>
         <div className={ `${style['img-wrapper']}` }>
-          <img className={ `${style['img']}` } src={ discordImg } alt='discord-img'/>
+          <img className={ `${style['img']}` } src={ props.imgSrc || discordImg } alt='discord-img'/>
         </div>
       </div>
     </div>
