@@ -1,0 +1,46 @@
+.left-side-bar {
+  display: grid;
+  grid-template-rows: 60px minmax(0, 1fr);
+
+  height: 100%;
+  background-color: #202225;
+
+  
+  .first-area {
+    display: grid;
+    grid-template-rows: minmax(0, 1fr) 3px;
+    justify-content: center;
+
+    .img-area {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+      height: 50px;
+      width: 50px;
+      background-color: #36393F;
+      border-radius: 50%;
+
+      &:hover {
+        cursor: pointer;
+        background-color: #5865F2;
+        border-radius: 35%;
+        transition:border-radius 0.3s;
+      }
+
+      .img {
+        width: 70%;
+        height: 70%;
+        object-fit: cover;
+      }
+    }
+
+    .under-line {
+      margin: auto;
+      width: 60%;
+      height: 3px;
+      background-color: #36393F;
+    }
+  }
+
+}
